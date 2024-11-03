@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0;
+    min-height: 2000px;
+}
+
+.heading {
+    margin: 0;
+    padding-left: 10px;
+    font-family: "Playwrite CU", cursive;
+    font-optical-sizing: auto;
+    color: #fff;
+}
+
+.heading1 {
+    margin: 0;
+    text-align: center;
+}
+
+.heading2 {
+    margin: 0;
+}
+
+
+.main {
+    display: table;
+    width: 100%;
+}
+
+.main>div {
+    display: table-row;
+}
+
+.main>div>div {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.main>div>div:first-child {
+    position: relative;
+
+}
+.bg{
+    background-image: url(images/gooddinosaur.jpg);
+    background-size: cover;
+}
+
+.main>div>div:last-child {
+    width: 80px;
+}
+
+header {
+    height: 100px;
+    background-color: transparent;
+}
+
+header .logo {
+    width: 350px;
+    height: 100px;
+    float: left;
+}
+
+header .navbar {
+    height: 100px;
+    background-color: transparent;
+    float: right;
+    padding-top: 20px;
+}
+
+.menu {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    font-family: "Saira Condensed", sans-serif;
+
+}
+
+.menu>li {
+    float: left;
+
+}
+
+.menu>li>a {
+    text-decoration: none;
+    padding: 15px 20px;
+    border-bottom: solid 2px white;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.menu a.active {
+    color: blue;
+    border-bottom-color: blue;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.desc {
+    height: 400px;
+    width: 350px;
+    background-colors: blue;
+    text-align: center;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.position {
+    width: 40px;
+    height: 40px;
+    background-colors: aqua;
+    margin: auto;
+    font-size: 24px;
+    line-height: 30px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.position sup {
+    font-size: 14px;
+}
+
+.star {
+    margin-bottom: 30px;
+}
+
+.star i.bx-yellow {
+    color: #ff0;
+}
+
+.star i.bx-white {
+    color: #fff;
+}
+
+.desc div:nth-child(5) {
+    line-height: 20px;
+}
+
+.trailer {
+    position: relative;
+    height: 100px;
+    background-colors: #ff0;
+    color: #fff;
+}
+
+.trailer>div:last-child>div {
+    position: absolute;
+    right: -15px;
+    top: 45px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.trailer-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trailer-info-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.trailer-info-list li {
+    display: inline;
+}
+
+.trailer-info-list li::after {
+    content: '/';
+    display: inline-block;
+    width: 15px;
+    color: #000;
+}
+
+.trailer-info-list li:nth-child(2) {
+    color: #3f3f3f;
+}
+
+.trailer-info-list li:last-child::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    color: #aaa;
+}
+
+.trailer div:last-child img {
+    width: 100%;
+}
+
+.img-shade {
+    box-shadow: -8px 8px 0 rgba(255, 255, 255, 0.2);
+}
+
+.ellipsis {
+    height: 70px;
+    border-bottom: solid 2px #000;
+    line-height: 70px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.ellipsis-dot li {
+    width: 7px;
+    height: 7px;
+    border-radius: 5px;
+    background-color: black;
+    display: inline-block;
+}
+
+.list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.characters li {
+    height: 91px;
+    background-color: red;
+}
+
+.characters li.active {
+    position: relative;
+    height: 370px;
+    background-color: #fff;
+    margin-left: -200px;
+
+}
+
+.characters li.active .positionnew {
+    position: absolute;
+    height: 50px;
+    width: 200px;
+    top: -50px;
+    padding-left: 30px;
+    background-color: transparent;
+}
+
+.characters li.active div:nth-child(2) {
+    text-align: center;
+    margin-bottom: -20px;
+}
+
+.characters li.active div:last-child {
+    padding: 15px;
+}
+
+.small {
+    padding-left: 20px;
+    color: #aaa;
+}
+
+.wallpapers {
+    position: absolute;
+    width: 120px;
+    height: 100px;
+    background-color: transparent;
+    right: 300px;
+    bottom: 50px;
+    color: #fff;
+}
+
+.wallpapers div {
+    width: 120px;
+    height: 82px;
+    background-color: #000;
+}
+
+.wallpapers>div>div {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 45px;
+    right: -15px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+
+.buttons li {
+    width: 40px;
+    height: 35px;
+    float: left;
+    background-color: skyblue;
+    text-align: center;
+    line-height: 35px;
+}
+
+.buttons li i {
+    font-size: 24px;
+    line-height: 35px;
+}
+
+.buttons li:last-child {
+    background-color: #aaa;
+}
+.text-center{
+    text-align: center;
+}
+.d-block{
+    display: block;
+}
+.width-50{
+    width: 50%;
+}
+a.rm{
+    padding: 15px 20px;
+    background-color: skyblue;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+.bg-black{    
+    background-color: #3f3f3f !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pd-10 {
+    padding: 10px;
+}
+
+.pd-20 {
+    padding: 20px;
+}
+
+.pd-30 {
+    padding: 30px;
+}
+
+.pd-40 {
+    padding: 40px;
+}
+
+.pd-50 {
+    padding: 50px;
+}
+
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+.pr-80{
+    padding-right: 80px;
+}
